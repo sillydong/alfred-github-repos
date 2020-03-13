@@ -159,9 +159,9 @@ module Github
 
     def read_cached_repos
       cache_string = cache_storage.get
-      cache_expired = (read_cache_timestamp + CACHE_LIFETIME) < Time.now.to_i
+      # cache_expired = (read_cache_timestamp + CACHE_LIFETIME) < Time.now.to_i
 
-      return [] if cache_string.nil? || cache_expired
+      return [] if cache_string.nil?# || cache_expired
 
       cache_string.split("\n").map { |i| Repo.from_storage_string(i) }
     end

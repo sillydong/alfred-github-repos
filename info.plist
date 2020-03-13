@@ -244,9 +244,9 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>gh-reset-cache</string>
+				<string>gh-update</string>
 				<key>subtext</key>
-				<string>gh-reset-cache</string>
+				<string>gh-update</string>
 				<key>text</key>
 				<string>Update github cache</string>
 				<key>withspace</key>
